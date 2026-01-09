@@ -216,12 +216,12 @@ class TrainableAligner(TranscriberMixin, TopLevelMfaWorker, ModelExporterMixin):
         )
         training_params.append(("pronunciation_probabilities", {"subset": 50000}))
         training_params.append(
-            ("sat", {"subset": 120000, "num_leaves": 5000, "max_gaussians": 100000})
+            ("sat", {"subset": 140000, "num_leaves": 5000, "max_gaussians": 100000})
         )
         training_params.append(
             (
                 "pronunciation_probabilities",
-                {"subset": 120000, "optional": True},
+                {"subset": 140000, "optional": True},
             )
         )
         training_params.append(
